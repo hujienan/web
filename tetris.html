@@ -53,13 +53,11 @@
 		paintBackground();
 		var trs = tabObj.getElementsByTagName("tr");
 		function rePaint(){
-			//console.log("rePaint");
 			var preTds = tabObj.getElementsByTagName("td");
 			for(var i=0; i< preTds.length; i++){
 				preTds[i].style.background = "grey";
 			}
 			for(var i=0; i<map.length-1; i++){
-				//console.log(map[i].toString(2));
 				var strArr = map[i].toString(2).slice(1, -1).split("");
 				var tds = trs[i].getElementsByTagName("td");
 				for(var j=0; j<strArr.length; j++){
@@ -111,26 +109,15 @@
 	        		borderIf = true;
 	        	}
 	        }
-	        // console.log(showObj.line[2].toString(2));
-	        // console.log(map[2].toString(2));
-	        // console.log(showObj.line[3].toString(2));
-	        // console.log(map[3].toString(2));
 	        if(showObj.y == 0){
-				// console.log(showObj.line[2] & map[2]);
-				// console.log(showObj.line[3] & map[3]);
 				if((showObj.line[2] & map[2]) != 0 || (showObj.line[3] & map[3]) != 0){
-					console.log( "line not 0");
 					for(var i=0; i<4; i++){
 						map[i] = map[i] | showObj.line[i];
-						// console.log(map[i].toString(2));
-						
 					}
 					rePaint();
 					return over();	
 				}
 			}
-			
-	        // at the start, judge if covered with top 
 	        
 	        if(!borderIf){
 	        	
@@ -148,8 +135,6 @@
 						showObj.line[i] = lineArrCopy[i];
 					}
 	        	}
-	        	console.log(" border if ");
-	        	
 	        }else{
 	        	showIndex = showIndex-1;
 				showObj.obj = showShape[showIndex];
@@ -170,7 +155,6 @@
 		}
 		
 		function over(){
-			console.log("over");
 			document.onkeydown = null;
 			clearInterval(autoDown);
 			alert("game over");
@@ -187,7 +171,6 @@
 	        	}
 	        	 rePaint();
 	        }else{
-	        	console.log("down covered");
 	        	map.length = 23;
 	        	for(var i=0; i<4 && showObj.y+i-1<22; i++){
 	        			map[showObj.y+i-1] = (map[showObj.y+i-1]) | (showObj.line[i]);
@@ -198,22 +181,10 @@
 				}
 				rePaint();
 				if(map[1] != 0x801){
-					console.log("return over");
 					return over();
 				}
-				for(var i=0; i< map.length; i++){
-	        	console.log(map[i].toString(2));
-	        	}
-				console.log("start");
-
 	        	start();
-	        	
-	        
-	        }
-	        
-	       
-	        
-	        
+	        }  
 		}
 		
 		function left(){
@@ -243,14 +214,10 @@
 	        	}
 	        	for(var i=0; i<4; i++){
 					map[showObj.y+i] = (map[showObj.y+i]) | (lineArrCopy[i]);
-					//console.log(map[showObj.y+i].toString(2));
 				}
 	        }
 	        rePaint();
-			}
-			
-	        
-	        
+			} 
 		}
 		function right(){
 			var lineArrCopy = Array();
