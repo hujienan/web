@@ -68,7 +68,7 @@
         var index = 0;
         $(divs).hide();
         $(divs[index]).show();
-        $(window).bind('mousewheel', function(e){
+        $(window).on('mousewheel', function(e){
         if(e.originalEvent.wheelDelta /120 > 0) {
             console.log('scrolling up !');
             index = index - 1;

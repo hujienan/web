@@ -65,7 +65,7 @@
 			count++;
 		}
 	}
-	console.log(count);
+	
 //赢法统计数组
 	var myWin = [];
 	var computerWin = [];
@@ -73,9 +73,9 @@
 		myWin[i]=0;
 		computerWin[i]=0;
 	}
-
 	var context	= chess.getContext("2d");
 	context.strokeStyle = "#BFBFBF";
+	//Paint chessboard
 	for(var i=0;i<15;i++){
 		context.moveTo(15 + i*30,15);
 		context.lineTo(15 + i*30,435);
@@ -84,6 +84,7 @@
 		context.lineTo(435,15 + i*30);
 		context.stroke();
 	}
+
 	var oneStep = function(i,j,me){
 		context.beginPath();
 		context.arc(15+i*30,15+j*30,13,0,2*Math.PI);
@@ -99,6 +100,7 @@
 		context.fillStyle = gradient;
 		context.fill();
 	}
+
 	chess.onclick = function(e){
 		if(over){
 			return;
