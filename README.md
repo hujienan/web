@@ -19,8 +19,24 @@ An online painting page that using **canvas**.
 
 ## gobang
 
-A online gobang game using **JavaScript**.
+An online gobang game using **JavaScript**.
 
 [check](http://hujienan.github.io/web-demo/gobang.html) by computer.
+
+---
+
+## parallax_scrolling_3d
+
+The simple demo that have 3d parallax scrolling effct.
+
+[check](http://hujienan.github.io/web-demo/parallax_scrolling_3d.html) by computer.
+
+---
+
+## tetris
+
+The tetris game that using **JavaScript**.
+
+[check](http://hujienan.github.io/web-demo/tetris.html) by computer.
 
 ---
