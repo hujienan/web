@@ -17,4 +17,10 @@ An online painting page that using **canvas**.
 
 ---
 
+## gobang
 
+A online gobang game using **JavaScript**.
+
+[check](http://hujienan.github.io/web-demo/gobang.html) by computer.
+
+---
