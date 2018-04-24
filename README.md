@@ -5,7 +5,7 @@ Introduction
 
 This folder contains a **H5** project that using **sass** and **rem**.
 
-[check](http://hujienan.github.io/web-demo/newsH5/newsH5.html) by mobile.
+[check](http://hujienan.github.io/web-demo/newsH5/newsH5.html) on mobile.
 
 ---
 
@@ -13,7 +13,7 @@ This folder contains a **H5** project that using **sass** and **rem**.
 
 An online painting page that using **canvas**.
 
-[check](http://hujienan.github.io/web-demo/canvasPaint.html) by computer.
+[check](http://hujienan.github.io/web-demo/canvasPaint.html) on computer.
 
 ---
 
@@ -21,7 +21,7 @@ An online painting page that using **canvas**.
 
 An online gobang game using **JavaScript**.
 
-[check](http://hujienan.github.io/web-demo/gobang.html) by computer.
+[check](http://hujienan.github.io/web-demo/gobang.html) on computer.
 
 ---
 
@@ -29,7 +29,7 @@ An online gobang game using **JavaScript**.
 
 The simple demo that have 3d parallax scrolling effct.
 
-[check](http://hujienan.github.io/web-demo/parallax_scrolling_3d.html) by computer.
+[check](http://hujienan.github.io/web-demo/parallax_scrolling_3d.html) on computer.
 
 ---
 
@@ -37,6 +37,6 @@ The simple demo that have 3d parallax scrolling effct.
 
 The tetris game that using **JavaScript**.
 
-[check](http://hujienan.github.io/web-demo/tetris.html) by computer.
+[check](http://hujienan.github.io/web-demo/tetris.html) on computer.
 
 ---
